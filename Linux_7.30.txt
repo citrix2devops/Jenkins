@@ -1,0 +1,402 @@
+clear -- it willclear the screen
+PWD -- it will dispalythe presemt working path/directory
+
+mkdir -- to create folder/directories 
+
+syntax:  mkdir <foldername>
+
+mkdir sample
+
+
+touch -- to create files
+
+syantx: touch <filename>
+
+ex: touch test
+
+ls -- it will display list of filein the current path
+
+ls -l --it willdisplay the log list
+
+vi --to open the files / if the file is not exist it will create and open
+
+syntax: vi <filename>
+
+vi test
+
+i -- to convert insert mode,then you can add your content
+
+esc -- to conervt edit mode
+
+:wq! -- to save and quiet the file
+
+:q! --quiet the file without save
+
+history --it willdisplay the history/it willdisplay the what are the cmds you have excuted in the terminal
+
+
+https://the.earth.li/~sgtatham/putty/latest/wa64/putty.zip
+
+wget -- to download from internet
+
+syntax: wget <URL>
+
+apt -- to install the packages on ubuntu
+
+yum -- to install the packages on linux/centos
+
+ex: suod apt install unzip/zip/apache
+
+unzip -- to extract the zip files
+
+syntax: UNZIP <ZIPFILENAME>
+
+zip -r -- to create the file
+
+syntax: zip -r <zipname> <foldername>
+
+tar -xvf -- to extract the tar files
+
+syntax: tar -xvf <tar filename>
+
+tar -cvf -- to create tar file
+
+syntax: tar -cvf <tarname> <folder>
+
+alias -- to create alias names for commands/path
+
+syantx: alias <name>=cmd
+
+aliac c=mkdir 
+
+ps -ef -- it will display the process what are the process running on the backgroun
+
+top -- it will display the running on the background process with CPU /MEM utilization
+
+head --- to print the lines from top in a file
+
+sntax: head <filename> -- it will print 10 line from top
+
+head -20 <filename> -- it will print 20 lines from top
+
+tail -- to print the lines from bottom in a file
+
+sntax: tail <filename> -- it will print 10lines from botttom
+
+tail -30 <filename> -- it will print 30 lines from bottom
+
+| (pipe) -- it will pass first cmd output as a second command input
+
+grep -- to search specific word/conteant i files
+
+syntax: grep <word/contenat> <filename>
+
+df -h -- it will display the disspace in human format
+
+df -k -- it willdisplay the diskspace in KB format
+
+rm -r -- to remove folders/files
+
+syntax: rm -r <file/folder>
+
+rm -r * -- it will delete all files/folders in the current directory
+
+cp -- to copy the files
+
+sytax : cp <source> <destination>
+
+mv -- to move the files/ to rename the files it the destination path is not exist
+
+sntax: MV <source> <destination>
+
+
+ifconfig -- it will display IPinformaion
+hostname -- it will display the hostname
+
+sudo adduser -- to create users
+
+syntax:
+ sudo adduser <user> -
+
+sudo useradd ram -- it will create user, i won't ask password to set password our user
+
+sudo passwd <user> -- Reset/change password for users
+
+chmod <permissions> <input> -- to chnage the permissions for folder/file
+
+R=4
+W=2
+X=1ifconfig -- it will display IPinformaion
+hostname -- it will display the hostname
+
+sudo adduser -- to create users
+
+syntax:
+ sudo adduser <user> -
+
+sudo useradd ram -- it will create user, i won't ask password to set password our user
+
+sudo passwd <user> -- Reset/change password for users
+
+chmod <permissions> <input> -- to chnage the permissions for folder/file
+
+R=4
+W=2
+X=1
+
+chmod UGO <input>
+
+chown -R --- to chnage the owner/group file/folder
+
+sntax :chown -R <user>:<group> 
+
+sudo groupadd <groupname> -- to create group
+
+sudo usermod -aG <group> <user> -- to add users to the group
+
+date -- it will display the currect date and time
+
+cat -- it will display the content of file
+
+syntax: cat <filename>
+
+su <username> -- we can switch the user
+
+ssh user@IP -- to connect from one system another
+
+ssh-keygen -- to generate the keys
+
+setfacl -m user:<username>:<permission> <file/folder> -- we can add extra users and provide permisson o the users
+
+getfacl <file/folder> -- to what are the user groups having permmison for folder/file
+
+
+
+
+
+
+
+
+chmod UGO <input>
+
+chown -R --- to chnage the owner/group file/folder
+
+sntax :chown -R <user>:<group> 
+
+sudo groupadd <groupname> -- to create group
+
+sudo usermod -aG <group> <user> -- to add users to the group
+
+date -- it will display the currect date and time
+
+cat -- it will display the content of file
+
+syntax: cat <filename>
+
+su <username> -- we can switch the user
+
+ssh user@IP -- to connect from one system another
+
+ssh-keygen -- to generate the keys
+
+setfacl -m user:<username>:<permission> <file/folder> -- we can add extra users and provide permisson o the users
+
+getfacl <file/folder> -- to what are the user groups having permmison for folder/file
+
+
+mpstat -- it will display the CPU utilzation
+
+uname -r == itwil printIP and
+
+ln -s -- to create soft link/short cut path for thr folders
+
+syntax: ln -s <path> link
+
+ln -- to create hardlink/shortcut name for files
+
+synatx: ln <path> link
+
+unlink -- to delete soft/hardlinks
+
+sed -- to replace value/content in a file
+
+sed 's/oldname/newname/g' <filename>
+sed 's/oldname/newname/1g' <filename>
+sed 's/oldname/newname/1' <filename>
+
+AWk -- to printh values colum wise
+
+awk '{print}' <filename
+
+awk '/word/ {print}' <filname>
+
+awk '/word/ {print $1,$6}' <filename>
+
+cut -- you have to uderstand your own
+
+scp -- to copy the files from one server to another server
+
+scp <source> <destination>
+
+source -- user@IP:Path
+
+destination-- user@IP:Path
+
+echo -- to print he data
+
+echo "message"
+
+sh <scriptname> or ./scripname -- to excute shell ecripts
+
+sudo userdel <username> -- todelete user
+
+
+
+sudo yum install openjdk1.8
+
+sudo yum install tomcat
+ sudo yum install tomcat-webapps
+sudo yum install tomcat-admin-webapps
+
+cd /etc/tomcat
+
+vi tomcat-users.xml
+
+
+sudo service tomcat restart
+
+
+https://github.com/devops123445/sample.git
+
+git clone <url> -- we can clone the repository from remote/github to our local
+
+git add <file/folder> /. -- it will move the chnages to staging area from unstaging
+
+git commit -m "message" -- it will commit the chnages to local repository from staging area
+
+git push -- it will push chnges from our local to remote
+
+git init -- it will convert empty folder as a git repository
+
+git remote add origin <url> -- to add remote repo to local repo
+
+git push -u origin master -- to push master branch chnages to remote
+
+git log -- it will display the commit history
+
+
+git show <commit ID> -- it will show the commit history
+
+git branch -- it will display list of branches 
+
+git branch <branchname> -- to create new branch
+
+git checkout <branchname> -- we can switch to another
+
+git push --all-- to push all branches to remote repo
+
+git merge <source branch> -- we can merge the code from one branch to another
+
+git branch -D <branch name> -- to delete branch
+
+git push -d origin <branch name> -- we can delete branch in remote repo
+
+
+git stash save "message" -- it will hide all unstagig/staging area files
+
+git stash list -- git will dipsly the hide lost with stashcode
+
+git stash pop <stashcode> -- it will unhide the files and it will remove/drop in hiding area
+
+git stash apply <stashcode} -- itwill unhide the files, but it won't remove in hiding area
+
+git stash drop <stashcode} -- we can remove/drop hiding files
+
+git cherry-pick <Head/commit ID> -- we cane merge the code at specific commit
+
+git revert <commit ID> -- we can revert the chnages at specific commit.
+
+git reset --soft <HEAD/COMMITID> -- it will rest the chnages to staging area
+git reset --mixed <HEAD/COMMITID> -- it will rset the chnages to unstaging are
+git reset --hard <HEAD/COMMITID> -- it will delete permently
+
+
+git pull -- it will pull latest chages from remote repo to local
+
+git tag <tagname> -- to create tag
+
+git push origin <tagname> -- to push local tag to remote
+
+git tag --delete <delete> -- to delete tag in local
+
+git push --delete origin <tagname> -- it will delete in remote repo
+
+git tag <newname> <oldname> -- it will create tag from tag
+
+
+git branch <branchname> <tagname> -- it will create branch from tag
+
+git clone --branch <branchname> <url> -- it will clone the specific branch from remote repo
+
+git commit --amend --- we can edit previous commit msg and we can commitour lastest along with previous commit
+
+git rebase <branch>
+
+git merge <branch>
+
+sted at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 192.168.0.8:6443 --token wrayxv.2g93uyc7yhx5lq0l \
+    --discovery-token-ca-cert-hash sha256:8d04832588648965ed853d0f9643d0973eedee0d71ffc1d9380473db6ad16e93
+
+
+git init --bare <foldername> (foldername shoud be .git extension) -- we can convert/intialize empty folder as central repo
+[targethost]
+
+node1 --18.219.153.71
+node2 - 18.216.69.53
+node3 -- 3.141.85.206
+
+18.219.153.71 ansible_ssh_user=ram ansible_ssh_pass=ram
+18.216.69.53 ansible_ssh_user=ram ansible_ssh_pass=ram
+3.141.85.206 ansible_ssh_user=ram ansible_ssh_pass=ram
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
