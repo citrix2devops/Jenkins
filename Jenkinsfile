@@ -10,6 +10,7 @@ pipeline {
         stage('package'){
             when {
                 branch 'release'
+            }
             steps{
                 sh 'mvn package'
             }
